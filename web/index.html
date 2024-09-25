@@ -3,9 +3,375 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Health Web Proyect</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Home-Health Web Proyect</title>
 </head>
 <body>
-    
+    <!--Header Web-->
+    <header class="header">
+        <!--Header container-->
+        <section class="header__container">
+
+            <!--Logo Web-->
+            <figure class="header__logo">
+                <img src="/images/Logo.png" alt="logo" class="header__logo-img logo">
+            </figure>
+
+            <!--Header nav-->
+            <div class="header__navegation">
+                <a href="#" class="header__navegation-link">Interiores</a>
+                <a href="#" class="header__navegation-link">Exteriores</a>
+                <a href="#" class="header__navegation-link">Remodelacion</a>
+                <a href="#" class="header__navegation-link">Encuentranos</a>
+                <a href="#" class="header__navegation-link">Cuenta</a>
+            </div>
+
+            <!--Menu Sidebar-->
+            <button type="button" id="open-btn" class="menu-btn open-btn">
+                <i class="bi bi-list menu-icon"></i>
+            </button>
+
+            <nav class="sidebar__menu">
+                <button type="button" id="close-btn" class="menu-btn close-btn">
+                    <i class="bi bi-x-lg menu-icon"></i>
+                </button>
+
+                <!--Navegation Menu Container-->
+                <div class="navegation__menu-content">
+                    <div class="navegation__menu-container">
+                        <a href="#" class="navegation__menu-link">Inicio</a>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="#" class="navegation__menu-link">Nosotros</a>
+                        <button type="button" id="sidebar-btn" class="sidebar-btn">
+                            <i class="bi bi-arrow-right-short icon sidebar-icon"></i>
+                        </button>
+
+                        <!--Submenu Sidebar-->
+                        <div class="submenu">
+                            <div class="submenu__container">
+                                <a href="#" class="submenu-link">Acerca de</a>
+                            </div>
+
+                            <div class="submenu__container">
+                                <a href="#" class="submenu-link">Tiendas</a>
+                            </div>
+
+                            <div class="submenu__container">
+                                <a href="#" class="submenu-link">Ayuda</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="#" class="navegation__menu-link">Remodelaciones</a>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="#" class="navegation__menu-link">Materiales</a>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="#" class="navegation__menu-link">Hogar</a>
+                    </div>
+
+                    <div class="navegation__menu-container"></div>
+                        <a href="#" class="navegation__menu-link">Cuenta</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!--Main Content Web Page-->
+    <main class="main">
+
+        <!--Landige Page-->
+        <section class="landige__page">
+            <div class="landige__page-container">
+
+                <div class="landige__page-text">
+                    <h1 class="landige__page-title">Home-Health</h1>
+                    <h3 class="landige__page-subtitle">Encuentra todo para tu hogar aqui.</h3>
+                </div>
+            </div>
+        </section>
+
+        <!--Section 1 banner-->
+        <section class="section section__banner">
+            <div class="section__banner-content">
+                <div class="section__banner-texts">
+                    <h2 class="title">Quieres un hogar de pelicula?</h2>
+                    <p class="paragraph">Aqui en Home-Health encontraras todo para lograr ese sueño Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nesciunt, repudiandae quae doloribus deleniti molestiae fuga necessitatibus porro a illo odio quisquam sapiente nihil ipsam, odit culpa dolorum laudantium quo!</p>
+                </div>
+
+                <figure class="section__banner-image">
+                    <img src="/images/img1.avif" alt="img1" class="section__banner-img">
+                </figure>
+            </div>
+        </section>
+
+        <!--Section 2 hogar-->
+        <section class="section section__hogar">
+            <div class="section__hogar-content">
+                <div class="section__hogar-text">
+                    <h2 class="title">Crea el hogar de tus sueños:</h2>
+                </div>
+
+                <div class="section__hogar-grid">
+                    <figure class="section__hogar-grid-1">
+                        <img src="/images/img2.avif" alt="img2" class="section__hogar-grid-img">
+                    </figure>
+
+                    <figure class="section__hogar-grid-2">
+                        <img src="/images/img3.avif" alt="img3" class="section__hogar-grid-img">
+                    </figure>
+
+                    <figure class="section__hogar-grid-3">
+                        <img src="/images/img4.avif" alt="img4" class="section__hogar-grid-img">
+                    </figure>
+
+                    <figure class="section__hogar-grid-4">
+                        <img src="/images/img5.avif" alt="img5" class="section__hogar-grid-img">
+                    </figure>
+
+                    <figure class="section__hogar-grid-5">
+                        <img src="/images/img6.avif" alt="img6" class="section__hogar-grid-img">
+                    </figure>
+
+                    <figure class="section__hogar-grid-6">
+                        <img src="/images/img7.avif" alt="img7" class="section__hogar-grid-img">
+                    </figure>
+
+                    <figure class="section__hogar-grid-7">
+                        <img src="/images/img8.avif" alt="img8" class="section__hogar-grid-img">
+                    </figure>
+
+                    <figure class="section__hogar-grid-8">
+                        <img src="/images/img9.avif" alt="img9" class="section__hogar-grid-img">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!--Section 3 remodelation exterior-->
+        <section class="section section__exterior">
+            <div class="section__exterior-content">
+                <div class="section__exterior-text">
+                    <h2 class="title">Crea la remodelacion exterior de tu casa:</h2>
+                    <p class="paragraph">Con nostros puedes hacer una remodelacion desde cero de tu hogar.</p>
+                    <p class="paragraph">Contamos con personales expertos en el area para tu hogar, para que nuestros empleados logrea hacer el hogar de tus sueños. <a href="#" class="link">Más informacion</a></p>
+                </div>
+
+                <figure class="section__exterior-image">
+                    <img src="/images/remodelacion-exterior.jpg" alt="img10" class="section__exterior-img">
+                </figure>
+            </div>
+        </section>
+
+        <!--Section 4 remodelation interior-->
+        <section class="section section__interior"></section>
+            <div class="section__interior-content">
+                <div class="section__interior-text">
+                    <h2 class="title">Crea la remodelacion interior de tu casa:</h2>
+                    <p class="paragraph">Con nostros puedes hacer una remodelacion desde cero de tu hogar.</p>
+                    <p class="paragraph">Contamos con personales expertos en el area para tu hogar, para que nuestros empleados logrea hacer el hogar de tus sueños. <a href="#" class="link">Más informacion</a></p>
+                </div>
+
+                <figure class="section__exterior-image">
+                    <img src="/images/remodelacion-interior.jpg" alt="img11" class="section__exterior-img">
+                </figure>
+            </div>
+        </section>
+
+        <!--Section 5 Formulario Info-->
+        <section class="section section__formulario">
+            <div class="section__formulario__container">
+
+                <!--Formulario-->
+                <form action="" id="formulario" class="formulario">
+                    <div class="formulario__content">
+                        <div class="formulario__info">
+                            <h3 class="formulario__title">Solicita informes para la remodeacion de tu casa</h3>
+                            <p class="paragaph">Si aun no cuentas con una cuenta en nuestro sitio <a href="#">Registrate aqui</a>. Y solicita ya informes para tu hogar.</p>
+                        </div>
+
+                        <div class="formulario__container">
+                            <i class="bi bi-person-fill icon"></i>
+
+                            <input type="text" name="name" id="nombre" class="input">
+
+                            <label class="label">Ingresa tu Nombre</label>
+                        </div>
+
+                        <div class="formulario__container">
+                            <i class="bi bi-person-fill icon"></i>
+
+                            <input type="text" name="apellidos" id="apellidos" class="input">
+
+                            <label class="label">Ingresa tus Apellidos</label>
+                        </div>
+
+                        <div class="formulario__container">
+                            <i class="bi bi-envelope-at-fill icon"></i>
+
+                            <input type="email" name="email" id="email" class="input">
+
+                            <label class="label">Ingresa tu Email</label>
+                        </div>
+
+                        <div class="formulario__container">
+                            <i class="bi bi-phone-fill icon"></i>
+
+                            <input type="tel" name="phone" id="phone" class="input">
+
+                            <label class="label">Numero Celular</label>
+                        </div>
+
+                        <div class="formulario__button">
+                            <button type="submit" class="formulario-btn">
+                                Enviar
+                                <i class="bi bi-arrow-right-short icon formulario-btn-icon"></i>
+                            </button>
+
+                            <button type="reset" class="formulario-btn">
+                                Restaurar
+                                <i class="bi bi-trash-fill icon formulario-btn-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--Section 6 Consulta Prices-->
+        <section class="section section__prices">
+            <div class="section__prices-content">
+                <div class="section__prices-text">
+                    <h2 class="title">Consulta los precios de visita para tus hogar:</h2>
+                </div>
+
+                <div class="section__prices-cards">
+                    <div class="card">
+                        <div class="card__container">
+                            <figure class="card__image">
+                                <img src="/images/card-image.jpg" alt="img12" class="card__image-img">
+                            </figure>
+
+                            <div class="card__texts">
+                                <h3 class="title title-card">Remodelacion Interior del Hogar</h3>
+
+                                <h4 class="price">Precio: $60USD</h4>
+                            </div>
+
+                            <div class="card__button">
+                                <a href="#" class="link">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card"></div>
+                        <div class="card__container">
+                            <figure class="card__image">
+                                <img src="/images/card-image.jpg" alt="img12" class="card__image-img">
+                            </figure>
+
+                            <div class="card__texts">
+                                <h3 class="title title-card">Remodelacion Exterior del Hogar</h3>
+
+                                <h4 class="price">Precio: $60USD</h4>
+                            </div>
+
+                            <div class="card__button">
+                                <a href="#" class="link">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card"></div>
+                        <div class="card__container">
+                            <figure class="card__image">
+                                <img src="/images/card-image.jpg" alt="img12" class="card__image-img">
+                            </figure>
+
+                            <div class="card__texts">
+                                <h3 class="title title-card">Remodelacion Completa del Hogar</h3>
+
+                                <h4 class="price">Precio: $80USD</h4>
+                            </div>
+
+                            <div class="card__button">
+                                <a href="#" class="link">Ver mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Section 7 Location-->
+        <section class="section section__location">
+            <div class="section__location-content">
+                <h2 class="title">Encuentra nuestra sucursal mas cercana a ti:</h2>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15050.252639749864!2d-99.20636158867707!3d19.431271695142833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d202036d4843f9%3A0xe4d37732c0d3a976!2sPolanco%2C%20Polanco%20I%20Secc%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1727233670355!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="section__location-map"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer" class="footer">
+        <div class="footer__content">
+            <figure class="footer__content-image">
+                <img src="/images/Logo.png" alt="logo" class="footer__content-logo logo">
+            </figure>
+
+            <div class="footer__content-container">
+
+                <div class="footer__about">
+                    <h3 class="f-container-title">Nosotros</h3>
+
+                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta incidunt nemo quis, deserunt unde deleniti.</p>
+
+                    <div class="f__container-phone">
+                        <i class="bi bi-telephone-fill f-icon"></i>
+                        <a href="#" class="link f-link">01800 8675 0789</a>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <h3 class="f-container-title">Informacion</h3>
+
+                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta incidunt nemo quis, deserunt unde deleniti.</p>
+                </div>
+
+                <div class="footer__social">
+                    <h3 class="f-container-title">Siguenos en:</h3>
+
+                    <div class="f__container-socials">
+                        <a href="#" class="link-f-link">
+                            <i class="bi bi-facebook f-icon"></i>
+                            Facebook
+                        </a>
+                        <a href="#" class="link-f-link">
+                            <i class="bi bi-instagram f-icon"></i>
+                            Instagram
+                        </a>
+                        <a href="#" class="link-f-link">
+                            <i class="bi bi-twitter-x f-icon"></i>
+                            Twitter(X)
+                        </a>
+                        <a href="#" class="link-f-link">
+                            <i class="bi bi-tiktok f-icon"></i>
+                            Tiktok
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="p-copyright">&copy;Christian Mendoza 2024/ProgramadorJS</p>
+    </footer>
 </body>
 </html>
