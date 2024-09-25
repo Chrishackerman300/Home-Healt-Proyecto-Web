@@ -8,7 +8,7 @@
 </head>
 <body>
     <!--Header Web-->
-    <header class="header">
+    <header class="header" id="header">
         <!--Header container-->
         <section class="header__container">
 
@@ -19,10 +19,10 @@
 
             <!--Header nav-->
             <div class="header__navegation">
-                <a href="#" class="header__navegation-link">Interiores</a>
-                <a href="#" class="header__navegation-link">Exteriores</a>
+                <a href="#section__interior" class="header__navegation-link">Interiores</a>
+                <a href="#section__exterior" class="header__navegation-link">Exteriores</a>
                 <a href="#" class="header__navegation-link">Remodelación</a>
-                <a href="#" class="header__navegation-link">Encuentranos</a>
+                <a href="#section__location" class="header__navegation-link">Encuentranos</a>
                 <a href="#" class="header__navegation-link">Cuenta</a>
             </div>
 
@@ -85,7 +85,7 @@
     </header>
 
     <!--Main Content Web Page-->
-    <main class="main">
+    <main class="main" id="main">
 
         <!--Landige Page-->
         <section class="landige__page">
@@ -221,7 +221,7 @@
         </section>
 
         <!--Section 3 remodelation exterior-->
-        <section class="section section__exterior">
+        <section class="section section__exterior" id="section__exterior">
             <div class="section__exterior-content">
                 <div class="section__exterior-text">
                     <h2 class="title">Crea la remodelación exterior de tu casa:</h2>
@@ -236,7 +236,7 @@
         </section>
 
         <!--Section 4 remodelation interior-->
-        <section class="section section__interior"></section>
+        <section class="section section__interior" id="section__interior">
             <div class="section__interior-content">
                 <div class="section__interior-text">
                     <h2 class="title">Crea la remodelación interior de tu casa:</h2>
@@ -376,7 +376,7 @@
         </section>
 
         <!--Section 7 Location-->
-        <section class="section section__location">
+        <section class="section section__location" id="section__location">
             <div class="section__location-content">
                 <h2 class="title">Encuentra nuestra sucursal más cercana a ti:</h2>
 
@@ -437,6 +437,13 @@
         </div>
 
         <p class="p-copyright">&copy;Christian Mendoza 2024/ProgramadorJS</p>
+
+        <!--Boton para regresar al inicio de la página-->
+        <button type="button" class="btn-home">
+            <a href="#header" class="btn-link">
+                <i class="bi bi-arrow-bar-up icon"></i>
+            </a>
+        </button>
     </footer>
 </body>
 </html>
