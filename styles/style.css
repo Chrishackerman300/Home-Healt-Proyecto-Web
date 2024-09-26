@@ -433,6 +433,7 @@ body{
         border-bottom: solid 2px var(--color-3);
         outline: none;
         transition: all .3s ease;
+        position: relative;
     }
 
     .label{
@@ -482,7 +483,7 @@ body{
         margin-left: 10px;
     }
 
-    /*Section 6*/
+    /*Section 6 Consulta Prices*/
 
     /*Section 7*/
 
