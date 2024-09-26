@@ -7,7 +7,7 @@
     --bg: #ccd1d1;
     --bg-header-footer: #2471a3; 
     --bg-landige-page: #5d6d7e; 
-    --bg-target-grid: #d68a10bc; 
+    --bg-target-grid: #d68a105e; 
     --bg-show-target: crimson;
     --bg-button-enviar:#c0392b;
     --bg-button-reset:#2c3e50;
@@ -17,6 +17,8 @@
     --bg-button-card-hover:#2e4053;
     --bg-header-link-hover: #fff;
     --bg-landige-img: url(/images/img1.avif);
+    --bg-grid-images: url(/images/img2.avif);
+    --bg-formulario: #fff;
 
     /*Textos*/
     --title: 'Poppins', sans-serif;
@@ -71,8 +73,8 @@ body{
 
 /*Btn home*/
 
-/*Responsive 390px - 320px*/
-@media screen and (max-width: 390px){
+/*Responsive Mobil Desgin 400px - 320px*/
+@media screen and (max-width: 400px){
     /*Header*/
     .header{
         display: block;
@@ -191,11 +193,16 @@ body{
         }
     }
 
+    .section{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 40px;
+    }
+
     /*Section 1 Banner*/
     .section__banner{
         width: 100%;
         height: 100%;
-        margin-bottom: 40px;
     }
 
     .section__banner-content{
@@ -224,6 +231,17 @@ body{
         text-align: justify
     }
 
+    .link{
+        font-size: 1rem;
+        font-family: var(--paragraph);
+        font-weight: 400;
+        color: var(--color-3);
+    }
+
+    .icon{
+        font-size: 22px;
+    }
+
     .section__banner-image{
         display: block;
         width: 100%;
@@ -238,17 +256,231 @@ body{
 
     /*Section 2 Hogar*/
     .section__hogar{
+        display: block;
+        position: relative;
+    }
+    .section__hogar-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 290px;
+        gap: 40px;
+    }
+
+    .section__hogar-grid-figure{
+        display: block;
         width: 100%;
         height: 100%;
+        cursor: pointer;
+    }
+
+    .section__hogar-grid-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     /*Section target grid*/
+    .show{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .3s ease;
+        clip-path: circle(0% at 50% 50%);
+    }
 
-    /*Section 3*/
+    .show:target{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        transition: all .3s ease;
+    }
 
-    /*Section 4*/
+    .show__container{
+        width: 95%;
+        height: 20%;
+        margin: 50% auto 0;
+        background-image: var(--bg-grid-images);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
 
-    /*Section 5*/
+    .show__close{
+        display: block;
+        font-size: 19px;
+        font-weight: 400;
+        color: var(--color-2);
+        text-decoration: none;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 1.3;
+        padding: 5px;
+        background: var(--bg-show-target);
+        position: absolute;
+        top: -15px;
+        right: -10px;
+    }
+
+    .show--n2{
+        --bg-grid-images: url(/images/img3.avif);
+    }
+
+    .show--n3{
+        --bg-grid-images: url(/images/img4.avif);
+    }
+
+    .show--n4{
+        --bg-grid-images: url(/images/img5.avif);
+    }
+
+    .show--n5{
+        --bg-grid-images: url(/images/img6.avif);
+    }
+
+    .show--n6{
+        --bg-grid-images: url(/images/img7.avif);
+    }
+
+    .show--n7{
+        --bg-grid-images: url(/images/img8.avif);
+    }
+
+    .show--n8{
+        --bg-grid-images: url(/images/img9.avif);
+    }
+
+    /*Section 3 Remodelacion exterior*/
+    .section__exterior-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section__exterior-image{
+        width: 100%;
+    }
+
+    .section__exterior-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*Section 4 Remodelacion interior*/
+    .section__interior-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section__interior-image{
+        width: 100%;
+    }
+
+    .section__interior-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*Section 5 Formulario*/
+    .section__formulario{
+        background: var(--bg-formulario);
+    }
+
+    .formulario__content{
+        width: 100%;
+        height: 100%;
+        padding: var(--padding);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .formulario____info{
+        width: 100%;
+    }
+
+    .formulario-p{
+        text-align: left;
+    }
+
+    .formulario__container{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .icon-formulario{
+        color: var(--color-3);
+    }
+
+    .input{
+        width: 90%;
+        background: none;
+        border: none;
+        border-bottom: solid 2px var(--color-3);
+        outline: none;
+        transition: all .3s ease;
+    }
+
+    .label{
+        position: absolute;
+        top: 5px;
+        left: 30px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    .input:focus{
+        border-bottom: solid 2px var(--color-5);
+    }
+
+    .input:focus + .label, .input:not(:placeholder-shown) + .label{
+        transform: translateY(-20px);
+        font-size: 13px;
+        color: var(--color-5);
+    }
+
+    .formulario__buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .formulario-btn{
+        width: 100%;
+        padding: var(--padding);
+        border-radius: 10px;
+        border: none;
+        background: var(--bg-button-enviar);
+        color: var(--color-2);
+        font-size: 1rem;
+        font-weight: 400;
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+        cursor: pointer;
+    }
+
+    .formulario-btn:nth-child(2){
+        background: var(--bg-button-reset);
+    }
+
+    .formulario-btn1-icon{
+        font-size: 20px;
+        margin-left: 10px;
+    }
 
     /*Section 6*/
 
