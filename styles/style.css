@@ -110,14 +110,19 @@ body{
     position: fixed;
     top: 0;
     right: 0;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
     transition: all .3s ease;
-    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+}
+
+.sidebar__menu.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: all .3s ease;
 }
 
 .close-btn{
     position: fixed;
-    right: 10px;
-    top: 15px;
+    right: 30px;
+    top: 45px;
 }
 
 .navegation__menu-content{
@@ -172,6 +177,36 @@ body{
 
 .submenu{
     display: none;
+    transition: all .3s ease;
+}
+
+.submenu.submenu-active{
+    display: block;
+    transition: all .3s ease;
+    margin-top: 10px;
+}
+
+.submenu__container{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.submenu-link{
+    display: block;
+    width: 100%;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: var(--paragraph);
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-2);
+    transition: all .3s ease;
+    padding: 10px;
+}
+
+.submenu-link:hover{
+    background: var(--color-2);
+    color: var(--color-4);
 }
 
 /*Darkmode*/
@@ -882,9 +917,11 @@ hr{
 .btn-link{
     color: var(--color-4);
     text-decoration: none;
+    text-align: center;
 }
 
 .btn-icon-top{
+    text-align: center;
     font-size: 20px;
 }
 
