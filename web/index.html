@@ -130,7 +130,7 @@
     <main class="main" id="main">
 
         <!--Landige Page-->
-        <section class="landige__page">
+        <section class="section landige__page">
             <div class="landige__page-container">
 
                 <div class="landige__page-text">
@@ -155,7 +155,7 @@
         </section>
 
         <!--Section 2 hogar-->
-        <section class="section section__hogar">
+        <section class="section section__hogar" id="section__hogar">
             <div class="section__hogar-content">
                 <div class="section__hogar-text">
                     <h2 class="title">Crea el hogar de tus sueños:</h2>
@@ -210,55 +210,67 @@
                             <img src="/images/img9.avif" alt="img9" class="section__hogar-grid-img">
                         </a>
                     </figure>
+
+                    <figure class="section__hogar-grid-figure">
+                        <a href="#img9" class="section__hogar-grid-target">
+                            <img src="/images/img1.avif" alt="img9" class="section__hogar-grid-img">
+                        </a>
+                    </figure>
                 </div>
             </div>
 
             <!--Section para targetear las imagenes de section 2 hogar-->
             <div class="show show--n1" id="img1">
                 <div class="show__container">
-                    <a href="#" class="show__close">X</a>
+                    <a href="#section__hogar" class="show__close">X</a>
                 </div>
             </div>
 
             <div class="show show--n2" id="img2">
                 <div class="show__container">
-                    <a href="#" class="show__close">X</a>
+                    <a href="#section__hogar" class="show__close">X</a>
                 </div>
             </div>
 
             <div class="show show--n3" id="img3">
                 <div class="show__container">
-                    <a href="#" class="show__close">X</a>
+                    <a href="#section__hogar" class="show__close">X</a>
                 </div>
             </div>
 
             <div class="show show--n4" id="img4">
                 <div class="show__container">
-                    <a href="#" class="show__close">X</a>
+                    <a href="#section__hogar" class="show__close">X</a>
                 </div>
             </div>
 
             <div class="show show--n5" id="img5">
                 <div class="show__container">
-                    <a href="#" class="show__close">X</a>
+                    <a href="#section__hogar" class="show__close">X</a>
                 </div>
             </div>
 
             <div class="show show--n6" id="img6">
                 <div class="show__container">
-                    <a href="#" class="show__close">X</a>
+                    <a href="#section__hogar" class="show__close">X</a>
                 </div>
             </div>
 
             <div class="show show--n7" id="img7">
                 <div class="show__container">
-                    <a href="#" class="show__close">X</a>
+                    <a href="#section__hogar" class="show__close">X</a>
                 </div>
             </div>
 
             <div class="show show--n8" id="img8">
                 <div class="show__container">
-                    <a href="#" class="show__close">X</a>
+                    <a href="#section__hogar" class="show__close">X</a>
+                </div>
+            </div>
+
+            <div class="show show--n9" id="img9">
+                <div class="show__container">
+                    <a href="#section__hogar" class="show__close">X</a>
                 </div>
             </div>
 
@@ -296,52 +308,44 @@
 
         <!--Section 5 Formulario Info-->
         <section class="section section__formulario">
-            <div class="section__formulario__container">
+            <div class="section__formulario-container">
+
+                <div class="formulario__info">
+                    <h3 class="formulario-title title">Solicita informes para la remodeación de tu casa</h3>
+                    <p class="paragraph formulario-p">Si aún no cuentas con una cuenta en nuestro sitio <a href="#" class="link">Registrate aquí</a>. Y solicita ya informes para tu hogar.</p>
+                </div>
 
                 <!--Formulario-->
-                <form action="" id="formulario" class="formulario">
+                <form id="formulario" class="formulario">
                     <div class="formulario__content">
-                        <div class="formulario__info">
-                            <h3 class="formulario__title title">Solicita informes para la remodeación de tu casa</h3>
-                            <p class="paragraph formulario-p">Si aún no cuentas con una cuenta en nuestro sitio <a href="#" class="link">Registrate aquí</a>. Y solicita ya informes para tu hogar.</p>
+                        <div class="formulario__container">
+                            <i class="bi bi-person-fill icon icon-formulario"></i>
+
+                            <input type="text" name="name" id="nombre" class="input" placeholder="Ingresa tu Nombre">
                         </div>
 
                         <div class="formulario__container">
                             <i class="bi bi-person-fill icon icon-formulario"></i>
 
-                            <input type="text" name="name" id="nombre" class="input">
-
-                            <label class="label">Ingresa tu Nombre</label>
-                        </div>
-
-                        <div class="formulario__container">
-                            <i class="bi bi-person-fill icon icon-formulario"></i>
-
-                            <input type="text" name="apellidos" id="apellidos" class="input">
-
-                            <label class="label">Ingresa tus Apellidos</label>
+                            <input type="text" name="apellidos" id="apellidos" class="input" placeholder="Ingresa tus Apellidos">
                         </div>
 
                         <div class="formulario__container">
                             <i class="bi bi-envelope-at-fill icon icon-formulario"></i>
 
-                            <input type="email" name="email" id="email" class="input">
-
-                            <label class="label">Ingresa tu Email</label>
+                            <input type="email" name="email" id="email" class="input" placeholder="Ingresa tu Email">
                         </div>
 
                         <div class="formulario__container">
                             <i class="bi bi-phone-fill icon icon-formulario"></i>
 
-                            <input type="tel" name="phone" id="phone" class="input">
-
-                            <label class="label">Numero Celular</label>
+                            <input type="tel" name="phone" id="phone" class="input" placeholder="Ingresa tu Telefono">
                         </div>
 
                         <div class="formulario__buttons">
                             <button type="submit" class="formulario-btn">
                                 Enviar
-                                <i class="bi bi-arrow-right-short icon formulario-btn1-icon"></i>
+                                <i class="bi bi-arrow-right icon formulario-btn1-icon"></i>
                             </button>
 
                             <button type="reset" class="formulario-btn">
@@ -365,53 +369,53 @@
                     <div class="card">
                         <div class="card__container">
                             <figure class="card__image">
-                                <img src="/images/card-image.jpg" alt="img12" class="card__image-img">
+                                <img src="/images/img1.avif" alt="img12" class="card__image-img">
                             </figure>
 
                             <div class="card__texts">
                                 <h3 class="title title-card">Remodelación Interior del Hogar</h3>
 
                                 <h4 class="price">Precio: $60USD</h4>
-                            </div>
 
-                            <div class="card__button">
-                                <a href="#" class="link">Ver más</a>
+                                <div class="card__button">
+                                    <a href="#" class="link link-card">Ver más</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card"></div>
+                    <div class="card">
                         <div class="card__container">
                             <figure class="card__image">
-                                <img src="/images/card-image.jpg" alt="img12" class="card__image-img">
+                                <img src="/images/img4.avif" alt="img12" class="card__image-img">
                             </figure>
 
                             <div class="card__texts">
                                 <h3 class="title title-card">Remodelación Exterior del Hogar</h3>
 
                                 <h4 class="price">Precio: $60USD</h4>
-                            </div>
 
-                            <div class="card__button">
-                                <a href="#" class="link">Ver más</a>
+                                <div class="card__button">
+                                    <a href="#" class="link link-card">Ver más</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card"></div>
+                    <div class="card">
                         <div class="card__container">
                             <figure class="card__image">
-                                <img src="/images/card-image.jpg" alt="img12" class="card__image-img">
+                                <img src="/images/img6.avif" alt="img12" class="card__image-img">
                             </figure>
 
                             <div class="card__texts">
                                 <h3 class="title title-card">Remodelación Completa del Hogar</h3>
 
                                 <h4 class="price">Precio: $80USD</h4>
-                            </div>
 
-                            <div class="card__button">
-                                <a href="#" class="link">Ver más</a>
+                                <div class="card__button">
+                                    <a href="#" class="link link-card">Ver más</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -441,10 +445,10 @@
                 <div class="footer__about">
                     <h3 class="f-container-title">Nosotros</h3>
 
-                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta incidunt nemo quis, deserunt unde deleniti.</p>
+                    <p class="paragraph f-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta incidunt nemo quis, deserunt unde deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est, quo magni vel reiciendis quod harum! Ipsa, quas? Inventore, enim.</p>
 
                     <div class="f__container-phone">
-                        <i class="bi bi-telephone-fill f-icon"></i>
+                        <i class="bi bi-telephone-fill f-icon f-icon-phone"></i>
                         <a href="#" class="link f-link">01800 8675 0789</a>
                     </div>
                 </div>
@@ -452,26 +456,26 @@
                 <div class="footer__info">
                     <h3 class="f-container-title">Información</h3>
 
-                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta incidunt nemo quis, deserunt unde deleniti.</p>
+                    <p class="paragraph f-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta incidunt nemo quis, deserunt unde deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga fugiat debitis ullam et vero quibusdam quisquam, voluptatibus maiores quam laudantium.</p>
                 </div>
 
                 <div class="footer__social">
                     <h3 class="f-container-title">Siguenos en:</h3>
 
                     <div class="f__container-socials">
-                        <a href="#" class="link-f-link">
+                        <a href="#" class="link f-link f-link-social">
                             <i class="bi bi-facebook f-icon"></i>
                             Facebook
                         </a>
-                        <a href="#" class="link-f-link">
+                        <a href="#" class="link f-link f-link-social">
                             <i class="bi bi-instagram f-icon"></i>
                             Instagram
                         </a>
-                        <a href="#" class="link-f-link">
+                        <a href="#" class="link f-link f-link-social">
                             <i class="bi bi-twitter-x f-icon"></i>
                             Twitter(X)
                         </a>
-                        <a href="#" class="link-f-link">
+                        <a href="#" class="link f-link f-link-social">
                             <i class="bi bi-tiktok f-icon"></i>
                             Tiktok
                         </a>
@@ -480,14 +484,17 @@
             </div>
         </div>
 
-        <p class="p-copyright">&copy;Christian Mendoza 2024/ProgramadorJS</p>
-
-        <!--Boton para regresar al inicio de la página-->
-        <button type="button" class="btn-home">
-            <a href="#header" class="btn-link">
-                <i class="bi bi-arrow-bar-up icon"></i>
-            </a>
-        </button>
+        <hr>
+        <p class="p-copyright">&copy;Christian Mendoza 2024</p>
     </footer>
+
+    <!--Boton para regresar al inicio de la página-->
+    <button type="button" class="btn-home">
+        <a href="#main" class="btn-link">
+            <i class="bi bi-arrow-bar-up icon btn-icon-top"></i>
+        </a>
+    </button>
+
+    <script src="/scripts/menu.js"></script>
 </body>
 </html>
