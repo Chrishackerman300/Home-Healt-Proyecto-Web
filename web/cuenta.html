@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Home-Health Web Sign In Proyect</title>
 </head>
 <body>
-    
+    <section class="section">
+        <div class="texts">
+            <h1 class="title">Iniciar Sesión</h1>
+            <p class="paragraph">A la hora de Iniciar Sesión tus datos quedaran almacenados y seguros en nuestro servidor.</p>
+        </div>
+
+        <!--Formulario-->
+        <form id="formulario" class="formulario">
+            <div class="formulario__content">
+                <div class="formulario__container">
+                    <i class="bi bi-person-fill icon"></i>
+
+                    <input type="email" name="email" id="email" class="input" placeholder=" ">
+
+                    <label class="label">Ingresa tu Email</label>
+                </div>
+
+                <div class="fomrulario__container">
+                    <i class="bi bi-lock-fill icon"></i>
+
+                    <input type="password" name="password" id="password" class="input" placeholder=" ">
+
+                    <label class="label">Ingrese su Password</label>
+                </div>
+
+                <div class="formulario__buttons">
+                    <button type="submit" id="btn-submit" class="btn">
+                        Iniciar Sesión
+                    </button>
+
+                    <button type="reset" id="btn-reset" class="btn">
+                        Resetear
+                    </button>
+                </div>
+
+                <div class="formulario__info">
+                    <p class="paragraph">Si aun no cuentas con una cuenta con nosotros, entra al siguiente enlace y creala. <a href="/web/registro.html" class="link">Registrate aquí</a>.</p>
+                </div>
+            </div>
+        </form>
+    </section>
 </body>
 </html>
