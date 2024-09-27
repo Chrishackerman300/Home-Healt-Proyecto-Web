@@ -1,0 +1,186 @@
+/*Fuentes de texto*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Variables*/
+:root{
+    /*Backgrounds*/
+    --bg: linear-gradient(#673AB7, #512DA8);
+    --bg-formulario: #fff;
+    --bg-btn-submit: #2874a6;
+    --bg-btn-reset: #b03a2e;
+    --bg-btn-submit-hover: #28b463;
+    --bg-btn-reset-hover: #34495e;
+
+    /*Web Size's*/
+    --padding: 10px;
+    --padding-formulario: 20px 15px;
+    --margin: 0 auto;
+
+    /*Texts*/
+    --title: 'Poppins', sans-serif;
+    --paragraph: 'Open Sans', sans-serif;
+    --color: #212f3d;
+    --color-link: #cb4335;
+    --color-icon: #9b59b6; 
+    --color-border-focus: #d68910;
+    --color-buttons: #fff;
+}
+
+/*Body*/
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: var(--bg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--title);
+    color: var(--color);
+    position: relative;
+}
+
+.section{
+    width: 50%;
+    margin: var(--margin);
+    background: var(--bg-formulario);
+    padding: var(--padding-formulario);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,.8);
+}
+
+.texts{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.formulario{
+    width: 100%;
+}
+
+.formulario__content{
+    width: 70%;
+    margin: var(--margin);
+}
+
+.formulario__container{
+    width: 100%;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.icon{
+    font-size: 22px;
+    color: var(--color-icon);
+    margin-right: 5px;
+}
+
+.input{
+    width: 90%;
+    padding: var(--padding);
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--color-icon);
+    outline: none;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--paragraph);
+    transition: all .3s ease;
+}
+
+.input:focus{
+    border-bottom: solid 2px var(--color-border-focus);
+}
+
+.label{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    color: var(--color-icon);
+    font-weight: 500;
+    transition: transform .3s ease;
+}
+
+.input:focus + .label, input:not(:placeholder-shown) + .label{
+    font-size: 14px;
+    transform: translateY(-20px);
+}
+
+.btn-password{
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.formulario__buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 30px;
+}
+
+.btn{
+    width: 40%;
+    padding: var(--padding);
+    background: var(--bg-btn-submit);
+    border: none;
+    box-shadow: 0 0 13px rgba(0,0,0,.5);
+    border-radius: 5px;
+    color: var(--color-buttons);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn:nth-child(2){
+    background: var(--bg-btn-reset);
+}
+
+.btn:hover{
+    background: var(--bg-btn-submit-hover);
+}
+
+.btn:nth-child(2):hover{
+    background: var(--bg-btn-reset-hover);
+}
+
+.formulario__info{
+    width: 100%;
+}
+
+.paragraph{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--paragraph);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.link{
+    font-size: 1rem;
+    font-family: var(--title);
+    font-weight: 500;
+    color: var(--color-link);
+}
+
+.link-home{
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--bg-formulario);
+    box-shadow: 0 0 10px rgba(0,0,0);
+}
