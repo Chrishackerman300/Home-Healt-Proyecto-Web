@@ -38,6 +38,7 @@ body{
     align-items: center;
     font-family: var(--title);
     color: var(--color);
+    position: relative;
 }
 
 .section{
@@ -171,4 +172,13 @@ body{
 .link{
     font-family: var(--title);
     color: var(--color-link);
+}
+
+.link-home{
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--bg-formulario);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
