@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/registro.css">
     <title>Home-Health Web Sign Up Proyect</title>
 </head>
 <body>
-    
+    <section class="section">
+        <div class="texts">
+            <h1 class="title">Registrate</h1>
+        </div>
+
+        <!--Formulario-->
+        <form id="formulario" class="formulario">
+            <div class="formulario__content">
+                <div class="formulario__container">
+                    <i class="bi bi-person-fill icon"></i>
+
+                    <input type="text" name="nombre" id="nombre" class="input" placeholder=" ">
+
+                    <label class="label">Ingresa tu Nombre</label>
+                </div>
+
+                <div class="formulario__container">
+                    <i class="bi bi-person-fill icon"></i>
+
+                    <input type="text" name="apellidoP" id="apelldioP" class="input" placeholder=" ">
+
+                    <label class="label">Ingresa tu Apellido Paterno</label>
+                </div>
+
+                <div class="formulario__container">
+                    <i class="bi bi-person-fill icon"></i>
+
+                    <input type="text" name="apellidoM" id="apelldioM" class="input" placeholder=" ">
+
+                    <label class="label">Ingresa tu Apellido Materno</label>
+                </div>
+
+                <div class="formulario__container">
+                    <i class="bi bi-phone-fill icon"></i>
+
+                    <input type="tel" name="number" id="number" class="input" placeholder=" ">
+
+                    <label class="label">Ingresa tu Teléfono</label>
+                </div>
+
+                <div class="formulario__container">
+                    <i class="bi bi-envelope-at-fill icon"></i>
+
+                    <input type="email" name="email" id="email" class="input" placeholder=" ">
+
+                    <label class="label">Ingresa tu Email</label>
+                </div>
+
+                <div class="formulario__container">
+                    <i class="bi bi-lock-fill icon"></i>
+
+                    <input type="password" name="password" id="password" class="input" placeholder=" ">
+
+                    <label class="label">Ingresa tu Password</label>
+
+                    <button id="btn-password" class="btn-password">
+                        <i class="bi bi-eye-fill icon"></i>
+                    </button>
+                </div>
+
+                <div class="formulario__buttons">
+                    <button type="submit" id="btn-submit" class="btn">
+                        Registrarte
+                    </button>
+
+                    <button type="reset" id="btn-reset" class="btn">
+                        Resetear
+                    </button>
+                </div>
+            </div>
+
+            <div class="formulario__info">
+                <p class="paragraph">Al registrarte aceptar los <a href="#" class="link">Términos y Condiciones</a> al igual que nuestras <a href="#" class="link">Políticas de Privacidad</a>.</p>
+
+                <p class="paragraph">Si ya cuentas con una cuenta <a href="/web/cuenta.html" class="link">Inicia Sesión aquí</a>.</p>
+            </div>
+        </form>
+
+        <a href="/web/index.html" class="link-home">
+            <i class="bi bi-arrow-bar-left icon"></i>
+        </a>
+    </section>
 </body>
 </html>
