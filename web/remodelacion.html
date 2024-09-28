@@ -4,87 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/remodelation.css">
     <title>Home-Health Remodelation Web Proyect</title>
 </head>
 <body>
     <!--Header-->
     <header class="header">
-        <section class="header__content">
-            <figure class="header__content-figure">
-                <img src="/images/Logo.png" alt="Logo" class="header__figure-logo logo">
+        <!--Header container-->
+        <section class="header__container">
+
+            <!--Logo Web-->
+            <figure class="header__logo">
+                <img src="/images/Logo.png" alt="logo" class="header__logo-img logo">
             </figure>
 
-            <!--Header Navegation  Link-->
-            <div class="header__content-links">
-                <a href="#" class="header__links-link">Info</a>
-                <a href="#" class="header__links-link">Proceso</a>
-                <a href="#" class="header__links-link">Trabajadores</a>
-                <a href="#" class="header__links-link">Interiores</a>
-                <a href="#" class="header__links-link">Exteriores</a>
+            <!--Header nav-->
+            <div class="header__navegation">
+                <a href="#section__remodelation" class="header__navegation-link">Información</a>
+                <a href="#section__process" class="header__navegation-link">Proceso</a>
+                <a href="#section__workers" class="header__navegation-link">Trabajadores</a>
+                <a href="#section__interior" class="header__navegation-link">Interiores</a>
+                <a href="#section__exterior" class="header__navegation-link">Exteriores</a>
             </div>
 
-            <!--Navegation Menu (Sidebar)-->
-            <button type="button" id="open-btn" class="menu-btn">
+            <!--Menu Sidebar-->
+            <button type="button" id="open-btn" class="menu-btn open-btn">
                 <i class="bi bi-list menu-icon"></i>
             </button>
 
-            <nav id="sidebar" class="sidebar__menu">
-                <button type="button" id="close-btn" class="menu-btn">
+            <nav class="sidebar__menu" id="sidebar">
+                <button type="button" id="close-btn" class="menu-btn close-btn">
                     <i class="bi bi-x-lg menu-icon"></i>
                 </button>
 
+                <!--Navegation Menu Container-->
                 <div class="navegation__menu-content">
                     <div class="navegation__menu-container">
-                        <a href="/web/index.html" class="navegation__menu-link">Inicio</a>
+                        <a href="/web/index.html" class="navegation__menu-link">
+                            <i class="bi bi-house-fill icon"></i>
+                            Inicio
+                        </a>
                     </div>
 
-                    <div class="sidebar__container">
-                        <a href="#" class="navegation__menu-link">Nosotros
+                    <div class="navegation__menu-container">
+                        <a href="#" class="navegation__menu-link">
+                            <i class="bi bi-person-arms-up icon"></i>
+                            Nosotros
 
                             <button type="button" id="submenu-btn" class="sidebar-btn">
                             <i class="bi bi-arrow-right icon sidebar-icon"></i>
                             </button>
+                        </a>
 
-                            <!--Submenu Sidebar-->
-                            <div class="submenu" id="submenu">
-                                <div class="submenu__container">
-                                    <a href="#" class="submenu-link">
-                                        <i class="bi bi-info-square-fill icon"></i>
-                                        Acerca de
-                                    </a>
-                                </div>
-
-                                <div class="submenu__container">
-                                    <a href="#" class="submenu-link">
-                                        <i class="bi bi-shop-window icon"></i>
-                                        Tiendas
-                                    </a>
-                                </div>
-
-                                <div class="submenu__container">
-                                    <a href="#" class="submenu-link">
-                                        <i class="bi bi-info-circle-fill icon"></i>
-                                        Ayuda
-                                    </a>
-                                </div>
+                        <!--Submenu Sidebar-->
+                        <div class="submenu" id="submenu">
+                            <div class="submenu__container">
+                                <a href="#" class="submenu-link">
+                                    <i class="bi bi-info-square-fill icon"></i>
+                                    Acerca de
+                                </a>
                             </div>
+
+                            <div class="submenu__container">
+                                <a href="#" class="submenu-link">
+                                    <i class="bi bi-shop-window icon"></i>
+                                    Tiendas
+                                </a>
+                            </div>
+
+                            <div class="submenu__container">
+                                <a href="#" class="submenu-link">
+                                    <i class="bi bi-info-circle-fill icon"></i>
+                                    Ayuda
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="/web/remodelacion.html" class="navegation__menu-link">
+                            <i class="bi bi-house-gear-fill icon"></i>
+                            Remodelaciones
                         </a>
                     </div>
 
-                    <div class="sidebar__container">
-                        <a href="#" class="navegation__menu-link">Remodelaciones</a>
+                    <div class="navegation__menu-container">
+                        <a href="#" class="navegation__menu-link">
+                            <i class="bi bi-tools icon"></i>
+                            Materiales
+                        </a>
                     </div>
 
-                    <div class="sidebar__container">
-                        <a href="#" class="navegation__menu-link">Materiales</a>
+                    <div class="navegation__menu-container">
+                        <a href="#" class="navegation__menu-link">
+                            <i class="bi bi-house-fill icon"></i>
+                            Hogar
+                        </a>
                     </div>
 
-                    <div class="sidebar__container">
-                        <a href="#" class="navegation__menu-link">Hogar</a>
-                    </div>
-
-                    <div class="sidebar__container">
-                        <a href="/web/cuenta.html" class="navegation__menu-link">Cuenta</a>
+                    <div class="navegation__menu-container"></div>
+                        <a href="/web/cuenta.html" class="navegation__menu-link">
+                            <i class="bi bi-person-fill icon"></i>
+                            Cuenta
+                        </a>
                     </div>
 
                     <!--Darkmode-->
@@ -96,7 +119,7 @@
 
                         <input type="checkbox" name="darkmode" id="darkmode" class="input-dark">
 
-                        <label for="darkmode" class="label-darkmode">a</label>
+                        <label for="darkmode" class="label-darkmode"></label>
                     </div>
                 </div>
             </nav>
@@ -120,8 +143,8 @@
             </div>
         </section>
 
-        <!--Section 1 Remodelacion Completa-->
-        <section class="section section-remodelacion">
+        <!--Section 1 Remodelation Completa-->
+        <section class="section section-remodelacion" id="section__remodelation">
             <div class="section__container">
                 <div class="section__texts">
                     <h2 class="title">Remodelación Completa de tu Hogar</h2>
@@ -155,12 +178,12 @@
         </section>
 
         <!--Section 2 Remodelation Process-->
-        <section class="section section-process">
+        <section class="section section-process" id="section__process">
             <div class="section__container">
                 <div class="section__texts">
-                    <h2 class="title">Proceso de Remodelación</h2>
+                    <h2 class="title title-n2">Proceso de Remodelación</h2>
                     <p class="paragraph">El proces para remodelar tu hogar consta por lo general de unas 8 semanas a 15 semanas.
-                        Dependiendo el tipo de remodelación.
+                        Dependiendo el tipo de remodelación. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis itaque vel velit earum optio voluptates ex expedita similique delectus.
                     </p>
                 </div>
 
@@ -178,7 +201,7 @@
         </section>
 
         <!--Section Remodelation Interior-->
-        <section class="section section-interior">
+        <section class="section section-interior" id="section__interior">
             <div class="section__container">
                 <div class="section__texts">
                     <h2 class="title">Remodela el interior de tu hogar</h2>
@@ -191,27 +214,27 @@
                 </div>
 
                 <div class="section__interior-grid">
-                    <figure class="figure__image">
+                    <figure class="figure__grid">
                         <img src="/images/img15.jpg" alt="image5" class="figure__img figure__img">
                     </figure>
 
-                    <figure class="figure__image"></figure>
+                    <figure class="figure__grid">
                         <img src="/images/img16.jpg" alt="image6" class="figure__img figure__img">
                     </figure>
 
-                    <figure class="figure__image"></figure>
+                    <figure class="figure__grid">
                         <img src="/images/img17.jpg" alt="image7" class="figure__img figure__img">
                     </figure>
 
-                    <figure class="figure__image"></figure>
+                    <figure class="figure__grid">
                         <img src="/images/img18.jpg" alt="image8" class="figure__img figure__img">
                     </figure>
 
-                    <figure class="figure__image"></figure>
+                    <figure class="figure__grid">
                         <img src="/images/img19.jpg" alt="image9" class="figure__img figure__img">
                     </figure>
 
-                    <figure class="figure__image"></figure>
+                    <figure class="figure__grid">
                         <img src="/images/img20.jpg" alt="image10" class="figure__img figure__img">
                     </figure>
                 </div>
@@ -219,7 +242,7 @@
         </section>
 
         <!--Section Remodelation Exterior-->
-        <section class="section section-exterior">
+        <section class="section section-exterior" id="section__exterior">
             <div class="section__container">
                 <div class="section__texts">
                     <h2 class="title">Remodela el exterior de tu hogar</h2>
@@ -231,28 +254,28 @@
                     <h3 class="subtitle">Te dejamos algunas de las remodelaciones de nuestros clientes:</h3>
                 </div>
 
-                <div class="section__interior-grid"></div>
-                    <figure class="figure__image">
+                <div class="section__exterior-grid">
+                    <figure class="figure__grid">
                         <img src="/images/img21.jpeg" alt="image11" class="figure__img figure__img">
                     </figure>
 
-                    <figure class="figure__image"></figure>
+                    <figure class="figure__grid">
                         <img src="/images/img22.jpg" alt="image12" class="figure__img figure__img">
                     </figure>
 
-                    <figure class="figure__image"></figure>
+                    <figure class="figure__grid">
                         <img src="/images/img23.jpg" alt="image13" class="figure__img figure__img">
                     </figure>
 
-                    <figure class="figure__image"></figure>
+                    <figure class="figure__grid">
                         <img src="/images/img24.jpg" alt="image14" class="figure__img figure__img">
                     </figure>
 
-                    <figure class="figure__image"></figure>
+                    <figure class="figure__grid">
                         <img src="/images/img25.jpg" alt="image15" class="figure__img figure__img">
                     </figure>
 
-                    <figure class="figure__image"></figure>
+                    <figure class="figure__grid">
                         <img src="/images/img26.jpg" alt="image16" class="figure__img figure__img">
                     </figure>
                 </div>
@@ -260,34 +283,31 @@
         </section>
 
         <!--Section Workers (Trabajadores)-->
-        <section class="section section-workers">
+        <section class="section section-workers" id="section__workers">
             <div class="section__container">
-                <div class="section__texts section__texts-flex">
-                    <h2 class="title">Conoce a nuestros trabajadores</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consectetur magnam expedita dolore hic quos dignissimos 
-                        ipsa quod, rerum quidem, aspernatur eveniet. Maiores aperiam vero deleniti libero ex impedit dolorum, quasi ratione reprehenderit 
-                        ipsam assumenda.</p>
+                <div class="section__content-info">
+                    <div class="section__texts-info">
+                        <h2 class="title">Conoce a nuestros trabajadores</h2>
+                        <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, obcaecati, magni cupiditate consequatur ab, sit vel suscipit dignissimos nam cumque blanditiis modi. Consequuntur iure atque blanditiis eaque quae animi ex, adipisci eos. Expedita eligendi a sint placeat ipsum, modi labore.</p>
+                    </div>
 
-                        <figure class="figure__texts">
-                            <img src="/images/img-workers.jpg" alt="image17" class="figure-texts-img">
-                        </figure>
+                    <figure class="section__content-image">
+                        <img src="/images/img-workers.jpg" alt="image17" class="figure__content-img">
+                    </figure>
                 </div>
 
-                <div class="section__info-container">
-                    <p class="paragraph">Cada unao de nuestros trabajadores están capacitados y con un grado de nivel de estudios superiores para trabajar en
+                <div class="section__container-info">
+                        <p class="paragraph">Cada unao de nuestros trabajadores están capacitados y con un grado de nivel de estudios superiores para trabajar en
                         nuestra empresa. Tenemos diferentes áreas de trabajo que va desde diseñadores, arquitectos, ingenieros civíles y albañiles. Cada
                         uno tiene su propio jefe de área para que tengan un trabajo y procesos ordenado y maximizado a la hora de hacer una remodeación.
                     </p>
-
-                    <p class="paragraph paragraph-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae suscipit similique porro accusamus, 
-                        delectus officiis nihil adipisci autem ipsam, nobis repudiandae ducimus? Libero, non atque?</p>
                 </div>
             </div>
         </section>
     </main>
 
     <!--Footer-->
-    <footer id="footer" class="footer"></footer>
+    <footer id="footer" class="footer">
         <div class="footer__content">
             <figure class="footer__content-image">
                 <img src="/images/Logo.png" alt="logo" class="footer__content-logo logo">
@@ -347,5 +367,8 @@
             <i class="bi bi-arrow-bar-up icon btn-icon-top"></i>
         </a>
     </button>
+
+    <!--Archivo JS-->
+    <script src="/scripts/menu.js"></script>
 </body>
 </html>
