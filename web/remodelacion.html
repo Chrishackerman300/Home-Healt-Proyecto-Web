@@ -3,9 +3,349 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Home-Health Remodelation Web Proyect</title>
 </head>
 <body>
-    
+    <!--Header-->
+    <header class="header">
+        <section class="header__content">
+            <figure class="header__content-figure">
+                <img src="/images/Logo.png" alt="Logo" class="header__figure-logo logo">
+            </figure>
+
+            <!--Header Navegation  Link-->
+            <div class="header__content-links">
+                <a href="#" class="header__links-link">Info</a>
+                <a href="#" class="header__links-link">Proceso</a>
+                <a href="#" class="header__links-link">Trabajadores</a>
+                <a href="#" class="header__links-link">Interiores</a>
+                <a href="#" class="header__links-link">Exteriores</a>
+            </div>
+
+            <!--Navegation Menu (Sidebar)-->
+            <button type="button" id="open-btn" class="menu-btn">
+                <i class="bi bi-list menu-icon"></i>
+            </button>
+
+            <nav id="sidebar" class="sidebar__menu">
+                <button type="button" id="close-btn" class="menu-btn">
+                    <i class="bi bi-x-lg menu-icon"></i>
+                </button>
+
+                <div class="navegation__menu-content">
+                    <div class="navegation__menu-container">
+                        <a href="/web/index.html" class="navegation__menu-link">Inicio</a>
+                    </div>
+
+                    <div class="sidebar__container">
+                        <a href="#" class="navegation__menu-link">Nosotros
+
+                            <button type="button" id="submenu-btn" class="sidebar-btn">
+                            <i class="bi bi-arrow-right icon sidebar-icon"></i>
+                            </button>
+
+                            <!--Submenu Sidebar-->
+                            <div class="submenu" id="submenu">
+                                <div class="submenu__container">
+                                    <a href="#" class="submenu-link">
+                                        <i class="bi bi-info-square-fill icon"></i>
+                                        Acerca de
+                                    </a>
+                                </div>
+
+                                <div class="submenu__container">
+                                    <a href="#" class="submenu-link">
+                                        <i class="bi bi-shop-window icon"></i>
+                                        Tiendas
+                                    </a>
+                                </div>
+
+                                <div class="submenu__container">
+                                    <a href="#" class="submenu-link">
+                                        <i class="bi bi-info-circle-fill icon"></i>
+                                        Ayuda
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="sidebar__container">
+                        <a href="#" class="navegation__menu-link">Remodelaciones</a>
+                    </div>
+
+                    <div class="sidebar__container">
+                        <a href="#" class="navegation__menu-link">Materiales</a>
+                    </div>
+
+                    <div class="sidebar__container">
+                        <a href="#" class="navegation__menu-link">Hogar</a>
+                    </div>
+
+                    <div class="sidebar__container">
+                        <a href="/web/cuenta.html" class="navegation__menu-link">Cuenta</a>
+                    </div>
+
+                    <!--Darkmode-->
+                    <div class="navegation__menu-container darkmode__container">
+                        <a href="#" class="darkmode-link">
+                            <i class="bi bi-moon-fill icon"></i>
+                            Modo Oscuro:
+                        </a>
+
+                        <input type="checkbox" name="darkmode" id="darkmode" class="input-dark">
+
+                        <label for="darkmode" class="label-darkmode">a</label>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!--Principal Content-->
+    <main id="main" class="main">
+
+        <!--Landige Page-->
+        <section class="landige__page">
+            <div class="landige__page-container">
+
+                <div class="landige__page-grid">
+
+                    <div class="landige__page-texts">
+                        <h1 class="landige__page-title">Home-Health</h1>
+                        <h3 class="landige__page-subtitle">Remodela tu hogar y hazlo un lugar de ensueño.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Section 1 Remodelacion Completa-->
+        <section class="section section-remodelacion">
+            <div class="section__container">
+                <div class="section__texts">
+                    <h2 class="title">Remodelación Completa de tu Hogar</h2>
+                    <p class="paragraph">Remodela tu hogar y a tu familia por completo. Lee acerca de como poder remodelar tu hogar con nostros,
+                        con la información que te proveemos. Y la guía que te estaremos dejando a lo largo de este artículo, podras ir creando y mejorando
+                        tu casa poco a poco.
+                    </p>
+                </div>
+
+                <div class="section__remodelacion-grid">
+                    <figure class="figure__image">
+                        <img src="/images/img11.avif" alt="image1" class="figure__img figure__img-1">
+                    </figure>
+
+                    <figure class="figure__image">
+                        <img src="/images/img12.avif" alt="image2" class="figure__img figure__img-2">
+                    </figure>
+
+                    <figure class="figure__image">
+                        <img src="/images/img13.avif" alt="image3" class="figure__img figure__img-3">
+                    </figure>
+                </div>
+
+                <div class="section__info-container">
+                    <p class="paragraph">El costo de la remodelación para tu hogar variara dependiendo de los materiales y el como quieras hacer la
+                        remodelación. Sin embargo nostros contamos con un equipo que te facilitará está tarea tan importante orientandote en todo el 
+                        proceso y ahorrandote dinero para la remodelación. <a href="#" class="link">Más Información</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--Section 2 Remodelation Process-->
+        <section class="section section-process">
+            <div class="section__container">
+                <div class="section__texts">
+                    <h2 class="title">Proceso de Remodelación</h2>
+                    <p class="paragraph">El proces para remodelar tu hogar consta por lo general de unas 8 semanas a 15 semanas.
+                        Dependiendo el tipo de remodelación.
+                    </p>
+                </div>
+
+                <figure class="section__figure">
+                    <img src="/images/img14.jpg" alt="image4" class="image">
+                </figure>
+
+                <div class="section__info-container">
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nemo perspiciatis recusandae, doloremque 
+                        consequatur cumque quo. Repudiandae magnam unde ipsam animi labore, similique excepturi natus cupiditate architecto impedit 
+                        autem deleniti, numquam, ut nisi. Odio minima recusandae adipisci obcaecati architecto provident aliquam ipsa ut tempora, ducimus 
+                        animi officia eaque ipsum dolore.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Section Remodelation Interior-->
+        <section class="section section-interior">
+            <div class="section__container">
+                <div class="section__texts">
+                    <h2 class="title">Remodela el interior de tu hogar</h2>
+                    <p class="paragraph">Para remodelar el interior de tu casa lo que te recomendamos primero es que debes de agendar una cita con nosotros,
+                        ya sea llenado este <a href="/web/index.html#section__formulario" class="link">Formulario</a>. O ponerte en contacto con nostros por medio de vía telefónica, o 
+                        acudiendo a una de nuestras <a href="#" class="link">Sucrusales</a> más cercanas a tu domicilio.
+                    </p>
+
+                    <h3 class="subtitle">Te dejamos algunas de las remodelaciones de nuestros clientes:</h3>
+                </div>
+
+                <div class="section__interior-grid">
+                    <figure class="figure__image">
+                        <img src="/images/img15.jpg" alt="image5" class="figure__img figure__img">
+                    </figure>
+
+                    <figure class="figure__image"></figure>
+                        <img src="/images/img16.jpg" alt="image6" class="figure__img figure__img">
+                    </figure>
+
+                    <figure class="figure__image"></figure>
+                        <img src="/images/img17.jpg" alt="image7" class="figure__img figure__img">
+                    </figure>
+
+                    <figure class="figure__image"></figure>
+                        <img src="/images/img18.jpg" alt="image8" class="figure__img figure__img">
+                    </figure>
+
+                    <figure class="figure__image"></figure>
+                        <img src="/images/img19.jpg" alt="image9" class="figure__img figure__img">
+                    </figure>
+
+                    <figure class="figure__image"></figure>
+                        <img src="/images/img20.jpg" alt="image10" class="figure__img figure__img">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!--Section Remodelation Exterior-->
+        <section class="section section-exterior">
+            <div class="section__container">
+                <div class="section__texts">
+                    <h2 class="title">Remodela el exterior de tu hogar</h2>
+                    <p class="paragraph">Para remodelar el interior de tu casa lo que te recomendamos primero es que debes de agendar una cita con nosotros,
+                        ya sea llenado este <a href="/web/index.html#section__formulario" class="link">Formulario</a>. O ponerte en contacto con nostros por medio de vía telefónica, o 
+                        acudiendo a una de nuestras <a href="#" class="link">Sucrusales</a> más cercanas a tu domicilio.
+                    </p>
+
+                    <h3 class="subtitle">Te dejamos algunas de las remodelaciones de nuestros clientes:</h3>
+                </div>
+
+                <div class="section__interior-grid"></div>
+                    <figure class="figure__image">
+                        <img src="/images/img21.jpeg" alt="image11" class="figure__img figure__img">
+                    </figure>
+
+                    <figure class="figure__image"></figure>
+                        <img src="/images/img22.jpg" alt="image12" class="figure__img figure__img">
+                    </figure>
+
+                    <figure class="figure__image"></figure>
+                        <img src="/images/img23.jpg" alt="image13" class="figure__img figure__img">
+                    </figure>
+
+                    <figure class="figure__image"></figure>
+                        <img src="/images/img24.jpg" alt="image14" class="figure__img figure__img">
+                    </figure>
+
+                    <figure class="figure__image"></figure>
+                        <img src="/images/img25.jpg" alt="image15" class="figure__img figure__img">
+                    </figure>
+
+                    <figure class="figure__image"></figure>
+                        <img src="/images/img26.jpg" alt="image16" class="figure__img figure__img">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!--Section Workers (Trabajadores)-->
+        <section class="section section-workers">
+            <div class="section__container">
+                <div class="section__texts section__texts-flex">
+                    <h2 class="title">Conoce a nuestros trabajadores</h2>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consectetur magnam expedita dolore hic quos dignissimos 
+                        ipsa quod, rerum quidem, aspernatur eveniet. Maiores aperiam vero deleniti libero ex impedit dolorum, quasi ratione reprehenderit 
+                        ipsam assumenda.</p>
+
+                        <figure class="figure__texts">
+                            <img src="/images/img-workers.jpg" alt="image17" class="figure-texts-img">
+                        </figure>
+                </div>
+
+                <div class="section__info-container">
+                    <p class="paragraph">Cada unao de nuestros trabajadores están capacitados y con un grado de nivel de estudios superiores para trabajar en
+                        nuestra empresa. Tenemos diferentes áreas de trabajo que va desde diseñadores, arquitectos, ingenieros civíles y albañiles. Cada
+                        uno tiene su propio jefe de área para que tengan un trabajo y procesos ordenado y maximizado a la hora de hacer una remodeación.
+                    </p>
+
+                    <p class="paragraph paragraph-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae suscipit similique porro accusamus, 
+                        delectus officiis nihil adipisci autem ipsam, nobis repudiandae ducimus? Libero, non atque?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer" class="footer"></footer>
+        <div class="footer__content">
+            <figure class="footer__content-image">
+                <img src="/images/Logo.png" alt="logo" class="footer__content-logo logo">
+            </figure>
+
+            <div class="footer__content-container">
+
+                <div class="footer__about">
+                    <h3 class="f-container-title">Nosotros</h3>
+
+                    <p class="paragraph f-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta incidunt nemo quis, deserunt unde deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est, quo magni vel reiciendis quod harum! Ipsa, quas? Inventore, enim.</p>
+
+                    <div class="f__container-phone">
+                        <i class="bi bi-telephone-fill f-icon f-icon-phone"></i>
+                        <a href="#" class="link f-link">01800 8675 0789</a>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <h3 class="f-container-title">Información</h3>
+
+                    <p class="paragraph f-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta incidunt nemo quis, deserunt unde deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga fugiat debitis ullam et vero quibusdam quisquam, voluptatibus maiores quam laudantium.</p>
+                </div>
+
+                <div class="footer__social">
+                    <h3 class="f-container-title">Siguenos en:</h3>
+
+                    <div class="f__container-socials">
+                        <a href="#" class="link f-link f-link-social">
+                            <i class="bi bi-facebook f-icon"></i>
+                            Facebook
+                        </a>
+                        <a href="#" class="link f-link f-link-social">
+                            <i class="bi bi-instagram f-icon"></i>
+                            Instagram
+                        </a>
+                        <a href="#" class="link f-link f-link-social">
+                            <i class="bi bi-twitter-x f-icon"></i>
+                            Twitter(X)
+                        </a>
+                        <a href="#" class="link f-link f-link-social">
+                            <i class="bi bi-tiktok f-icon"></i>
+                            Tiktok
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <p class="p-copyright">&copy;Christian Mendoza 2024</p>
+    </footer>
+
+    <!--Boton para regresar al inicio de la página-->
+    <button type="button" class="btn-home">
+        <a href="#main" class="btn-link">
+            <i class="bi bi-arrow-bar-up icon btn-icon-top"></i>
+        </a>
+    </button>
 </body>
 </html>
