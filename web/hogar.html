@@ -3,9 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Home-Health Hogar Web Proyect</title>
 </head>
 <body>
-    
+    <!--Header Web-->
+    <header class="header" id="header">
+        <!--Header container-->
+        <section class="header__container">
+
+            <!--Logo Web-->
+            <figure class="header__logo">
+                <img src="/images/Logo.png" alt="logo" class="header__logo-img logo">
+            </figure>
+
+            <!--Header nav-->
+            <div class="header__navegation">
+                <a href="#section__interior" class="header__navegation-link">Jardinería</a>
+                <a href="#section__exterior" class="header__navegation-link">Decoraciones</a>
+                <a href="#section-prices" class="header__navegation-link">Habitaciones</a>
+                <a href="#section__location" class="header__navegation-link">Cocina</a>
+                <a href="/web/cuenta.html" class="header__navegation-link">Cuenta</a>
+            </div>
+
+            <!--Menu Sidebar-->
+            <button type="button" id="open-btn" class="menu-btn open-btn">
+                <i class="bi bi-list menu-icon"></i>
+            </button>
+
+            <nav class="sidebar__menu" id="sidebar">
+                <button type="button" id="close-btn" class="menu-btn close-btn">
+                    <i class="bi bi-x-lg menu-icon"></i>
+                </button>
+
+                <!--Navegation Menu Container-->
+                <div class="navegation__menu-content">
+                    <div class="navegation__menu-container">
+                        <a href="/web/index.html" class="navegation__menu-link">
+                            <i class="bi bi-house-fill icon"></i>
+                            Inicio
+                        </a>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="#" class="navegation__menu-link">
+                            <i class="bi bi-person-arms-up icon"></i>
+                            Nosotros
+
+                            <button type="button" id="submenu-btn" class="sidebar-btn">
+                            <i class="bi bi-arrow-right icon sidebar-icon"></i>
+                            </button>
+                        </a>
+
+                        <!--Submenu Sidebar-->
+                        <div class="submenu" id="submenu">
+                            <div class="submenu__container">
+                                <a href="#" class="submenu-link">
+                                    <i class="bi bi-info-square-fill icon"></i>
+                                    Acerca de
+                                </a>
+                            </div>
+
+                            <div class="submenu__container">
+                                <a href="/web/materiales.html#section__stores" class="submenu-link">
+                                    <i class="bi bi-shop-window icon"></i>
+                                    Tiendas
+                                </a>
+                            </div>
+
+                            <div class="submenu__container">
+                                <a href="#" class="submenu-link">
+                                    <i class="bi bi-info-circle-fill icon"></i>
+                                    Ayuda
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="/web/remodelacion.html" class="navegation__menu-link">
+                            <i class="bi bi-house-gear-fill icon"></i>
+                            Remodelaciones
+                        </a>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="/web/materiales.html" class="navegation__menu-link">
+                            <i class="bi bi-tools icon"></i>
+                            Materiales
+                        </a>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="/web/hogar.html" class="navegation__menu-link">
+                            <i class="bi bi-house-fill icon"></i>
+                            Hogar
+                        </a>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="/web/cuenta.html" class="navegation__menu-link">
+                            <i class="bi bi-person-fill icon"></i>
+                            Cuenta
+                        </a>
+                    </div>
+
+                    <!--Darkmode-->
+                    <div class="navegation__menu-container darkmode__container">
+                        <a href="#" class="darkmode-link">
+                            <i class="bi bi-moon-fill icon"></i>
+                            Modo Oscuro:
+                        </a>
+
+                        <input type="checkbox" name="darkmode" id="darkmode" class="input-dark">
+
+                        <label for="darkmode" class="label-darkmode"></label>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!--Principal Content-->
+    <main id="main" class="main">
+
+    </main>
 </body>
 </html>
