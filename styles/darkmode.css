@@ -1,0 +1,71 @@
+/*Variables Darkmode*/
+:root{
+    --bg-darkmode: #1F1B24;
+    --color-principal: #BB86FC;
+    --color-text: #fff;;
+}
+
+.darkmode,
+.darkmode .header,
+.darkmode .sidebar__menu,
+.darkmode .landige__page,
+.darkmode .footer,
+.darkmode .formulario,
+.darkmode .card__texts,
+.darkmode .section__empresa,
+.darkmode .section__valores,
+.darkmode .section-remodelacion,
+.darkmode .section-interior,
+.darkmode .section-workers,
+.darkmode .section__materials,
+.darkmode .section__stores,
+.darkmode .section__location{
+    background: #1F1B24;
+}
+
+.darkmode .header__navegation-link:hover,
+.darkmode .navegation__menu-link:hover,
+.darkmode .submenu-link:hover{
+    color: var(--color-principal);
+}
+
+.darkmode .title,
+.darkmode .link,
+.darkmode .landige__page-title,
+.darkmode .landige-title,
+.darkmode .subtitle,
+.darkmode .card-title{
+    color: var(--color-principal);
+}
+
+.darkmode .paragraph,
+.darkmode .landige__page-subtitle,
+.darkmode .input,
+.darkmode .price,
+.darkmode .landige-subtitle,
+.darkmode .card-price{
+    color: var(--color-text);
+}
+
+.darkmode .card,
+.darkmode .section__banner-img,
+.darkmode .section__hogar-grid-figure,
+.darkmode .section__exterior-img,
+.darkmode .section__interior-img,
+.darkmode .figure__img,
+.darkmode .figure-img,
+.darkmode .figure__picture{
+    box-shadow: 0 0 15px rgba(100,100,100,.7);
+}
+
+.darkmode .link-card{
+    background: var(--color-principal);
+    color: var(--color-text);
+    transition: all .3s ease;
+}
+
+.darkmode .link-card:hover{
+    background: var(--color-text);
+    color: var(--color-principal);
+}
+

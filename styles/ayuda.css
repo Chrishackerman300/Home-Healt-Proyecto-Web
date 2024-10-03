@@ -269,6 +269,7 @@ body{
     font-size: 1rem;
     font-family: var(--paragraph);
     font-weight: 400;
+    text-align: center;
 }
 
 /*Landige Page*/
@@ -399,6 +400,7 @@ body{
     outline: none;
     position: relative;
     transition: all .3s ease;
+    background: none;
 }
 
 .input:focus{
