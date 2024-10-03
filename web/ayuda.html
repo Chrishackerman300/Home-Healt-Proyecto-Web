@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/ayuda.css">
+    <title>Home-Health Ayuda Web Proyect</title>
+</head>
+<body>
+    <!--Header Web-->
+    <header class="header" id="header">
+        <!--Header container-->
+        <section class="header__container">
+
+            <!--Logo Web-->
+            <figure class="header__logo">
+                <img src="/images/Logo.png" alt="logo" class="header__logo-img logo">
+            </figure>
+
+            <!--Header nav-->
+            <div class="header__navegation">
+                <a href="/web/index.html" class="header__navegation-link">Inicio</a>
+                <a href="/web/remodelacion.html" class="header__navegation-link">Remodelación</a>
+                <a href="/web/hogar.html" class="header__navegation-link">Hogar</a>
+                <a href="/web/materiales.html" class="header__navegation-link">Materiales</a>
+                <a href="/web/cuenta.html" class="header__navegation-link">Cuenta</a>
+            </div>
+
+            <!--Menu Sidebar-->
+            <button type="button" id="open-btn" class="menu-btn open-btn">
+                <i class="bi bi-list menu-icon"></i>
+            </button>
+
+            <nav class="sidebar__menu" id="sidebar">
+                <button type="button" id="close-btn" class="menu-btn close-btn">
+                    <i class="bi bi-x-lg menu-icon"></i>
+                </button>
+
+                <!--Navegation Menu Container-->
+                <div class="navegation__menu-content">
+                    <div class="navegation__menu-container">
+                        <a href="/web/index.html" class="navegation__menu-link">
+                            <i class="bi bi-house-fill icon"></i>
+                            Inicio
+                        </a>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="#" class="navegation__menu-link">
+                            <i class="bi bi-person-arms-up icon"></i>
+                            Nosotros
+
+                            <button type="button" id="submenu-btn" class="sidebar-btn">
+                            <i class="bi bi-arrow-right icon sidebar-icon"></i>
+                            </button>
+                        </a>
+
+                        <!--Submenu Sidebar-->
+                        <div class="submenu" id="submenu">
+                            <div class="submenu__container">
+                                <a href="/web/acerca.html" class="submenu-link">
+                                    <i class="bi bi-info-square-fill icon"></i>
+                                    Acerca de
+                                </a>
+                            </div>
+
+                            <div class="submenu__container">
+                                <a href="/web/materiales.html#section__stores" class="submenu-link">
+                                    <i class="bi bi-shop-window icon"></i>
+                                    Tiendas
+                                </a>
+                            </div>
+
+                            <div class="submenu__container">
+                                <a href="/web/ayuda.html" class="submenu-link">
+                                    <i class="bi bi-info-circle-fill icon"></i>
+                                    Ayuda
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="/web/remodelacion.html" class="navegation__menu-link">
+                            <i class="bi bi-house-gear-fill icon"></i>
+                            Remodelaciones
+                        </a>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="/web/materiales.html" class="navegation__menu-link">
+                            <i class="bi bi-tools icon"></i>
+                            Materiales
+                        </a>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="/web/hogar.html" class="navegation__menu-link">
+                            <i class="bi bi-house-fill icon"></i>
+                            Hogar
+                        </a>
+                    </div>
+
+                    <div class="navegation__menu-container">
+                        <a href="/web/cuenta.html" class="navegation__menu-link">
+                            <i class="bi bi-person-fill icon"></i>
+                            Cuenta
+                        </a>
+                    </div>
+
+                    <!--Darkmode-->
+                    <div class="navegation__menu-container darkmode__container">
+                        <a href="#" class="darkmode-link">
+                            <i class="bi bi-moon-fill icon"></i>
+                            Modo Oscuro:
+                        </a>
+
+                        <input type="checkbox" name="darkmode" id="darkmode" class="input-dark">
+
+                        <label for="darkmode" class="label-darkmode"></label>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!--Content Principal-->
+    <main id="main" class="main">
+
+        <!--Landige Page-->
+        <section class="landige__page">
+            <div class="landige__page-container">
+
+                <div class="landige__page-texts">
+                    <h1 class="landige-title">Home-Health</h1>
+                    <h3 class="landige-subtitle">Crear el hogar de tus sueños</h3>
+                </div>
+            </div>
+        </section>
+
+        <!--Section 1 Formulario Report Problem-->
+        <section class="section section__principal">
+            <div class="section__container">
+                <div class="section__content">
+                    <div class="section__texts">
+                        <h2 class="title">Reporta un Problema o Duda</h2>
+                        <p class="paragraph">Si tienes algun problema con nuestra web y servicios por llena el sigueinte formulario. O si tienes 
+                            alguna duda hásznosla saber en el formulario.
+                        </p>
+                    </div>
+
+                    <!--Formulario-->
+                    <form id="formulario" class="formulario">
+                        <div class="formulario__content">
+
+                            <div class="formulario__container">
+                                <i class="bi bi-person-fill icon-form"></i>
+
+                                <input type="text" name="nombre" id="nombre" class="input" placeholder=" ">
+
+                                <label class="label">Escribe tu Nombre</label>
+                            </div>
+
+                            <div class="formulario__container">
+                                <i class="bi bi-envelope-fill icon-form"></i>
+
+                                <input type="email" name="email" id="email" class="input" placeholder=" ">
+
+                                <label class="label">Ingreas tu Correo</label>
+                            </div>
+
+                            <div class="formulario__container">
+                                <textarea name="report" id="report" class="input input--area" placeholder="Reporta tu problema y/o redacta tu duda"></textarea>
+                            </div>
+
+                            <div class="formulario__buttons">
+                                <button type="submit" id="btn-submit" class="btn btn-submit">
+                                    <i class="bi bi-arrow-right icon-btn"></i>
+                                    Enviar
+                                </button>
+
+                                <button type="reset" id="btn-reset" class="btn btn-reset">
+                                    <i class="bi bi-trash-fill icon-btn"></i>
+                                    Eliminar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer" class="footer">
+        <div class="footer__content">
+            <figure class="footer__content-image">
+                <img src="/images/Logo.png" alt="logo" class="footer__content-logo logo">
+            </figure>
+
+            <div class="footer__content-container">
+
+                <div class="footer__about">
+                    <h3 class="f-container-title">Nosotros</h3>
+
+                    <p class="paragraph f-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta incidunt nemo quis, deserunt unde deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est, quo magni vel reiciendis quod harum! Ipsa, quas? Inventore, enim.</p>
+
+                    <div class="f__container-phone">
+                        <i class="bi bi-telephone-fill f-icon f-icon-phone"></i>
+                        <a href="#" class="link f-link">01800 8675 0789</a>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <h3 class="f-container-title">Información</h3>
+
+                    <p class="paragraph f-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta incidunt nemo quis, deserunt unde deleniti. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga fugiat debitis ullam et vero quibusdam quisquam, voluptatibus maiores quam laudantium.</p>
+                </div>
+
+                <div class="footer__social">
+                    <h3 class="f-container-title">Siguenos en:</h3>
+
+                    <div class="f__container-socials">
+                        <a href="#" class="link f-link f-link-social">
+                            <i class="bi bi-facebook f-icon"></i>
+                            Facebook
+                        </a>
+                        <a href="#" class="link f-link f-link-social">
+                            <i class="bi bi-instagram f-icon"></i>
+                            Instagram
+                        </a>
+                        <a href="#" class="link f-link f-link-social">
+                            <i class="bi bi-twitter-x f-icon"></i>
+                            Twitter(X)
+                        </a>
+                        <a href="#" class="link f-link f-link-social">
+                            <i class="bi bi-tiktok f-icon"></i>
+                            Tiktok
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <p class="p-copyright">&copy;Christian Mendoza 2024</p>
+    </footer>
+
+    <!--Boton para regresar al inicio de la página-->
+    <button type="button" class="btn-home">
+        <a href="#main" class="btn-link">
+            <i class="bi bi-arrow-bar-up icon btn-icon-top"></i>
+        </a>
+    </button>
+
+    <script src="/scripts/menu.js"></script>
+</body>
+</html>
