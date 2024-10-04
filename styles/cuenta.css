@@ -193,3 +193,52 @@ body{
     text-align: center;
     color: var(--color-buttons);
 }
+
+/*Responsive Design*/
+@media screen and (max-width: 1000px){
+    .section{
+        width: 70%;
+    }
+
+    .paragraph{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .section{
+        width: 80%;
+    }
+
+    .texts{
+        width: 100%;
+    }
+
+    .paragraph{
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .section{
+        width: 100%;
+    }
+
+    .formulario__buttons{
+        flex-direction: column;
+    }
+
+    .btn{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .label{
+        font-size: 15px;
+    }
+
+    .input{width: 100%;}
+}
