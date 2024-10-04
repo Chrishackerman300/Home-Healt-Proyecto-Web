@@ -195,3 +195,45 @@ body{
     color: var(--color-buttons);
     background: rgba(220, 20, 60, 0.542);
 }
+
+/*Responsive*/
+@media screen and (max-width: 1000px){
+    body{
+        height: 100%;
+    }
+
+    .section{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .section{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    @media screen and (max-width: 600px){
+        .section{
+            width: 100%;
+        }
+    
+        .formulario__buttons{
+            flex-direction: column;
+        }
+    
+        .btn{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .label{
+        font-size: 14px;
+    }
+
+    .input{width: 100%;}
+}
