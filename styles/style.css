@@ -19,6 +19,8 @@
     --bg-landige-img: url(/images/img2.avif);
     --bg-grid-images: url(/images/img2.avif);
     --bg-formulario: #fff;
+    --bg-input-failed: #cb4335;
+
 
     /*Textos*/
     --title: 'Poppins', sans-serif;
@@ -925,6 +927,19 @@ hr{
 .btn-icon-top{
     text-align: center;
     font-size: 20px;
+}
+
+/*Elementos del formulario*/
+.alerta{
+    display: block;
+    width: 90%;
+    margin: var(--margin);
+    padding: 10px;
+    background: var(--bg-input-failed);
+    color: var(--color-2);
+    text-align: center;
+    opacity: .7;
+    margin-top: 20px;
 }
 
 /*Responsive Design*/
