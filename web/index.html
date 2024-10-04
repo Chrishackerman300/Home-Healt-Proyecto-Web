@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/darkmode.css">
+    <link rel="stylesheet" href="/styles/spinner.css">
     <title>Home-Health Web Proyect</title>
 </head>
 <body>
@@ -322,7 +323,7 @@
                         <div class="formulario__container">
                             <i class="bi bi-person-fill icon icon-formulario"></i>
 
-                            <input type="text" name="name" id="nombre" class="input" placeholder="Ingresa tu Nombre">
+                            <input type="text" name="nombre" id="nombre" class="input" placeholder="Ingresa tu Nombre">
                         </div>
 
                         <div class="formulario__container">
@@ -337,22 +338,30 @@
                             <input type="email" name="email" id="email" class="input" placeholder="Ingresa tu Email">
                         </div>
 
-                        <div class="formulario__container">
-                            <i class="bi bi-phone-fill icon icon-formulario"></i>
-
-                            <input type="tel" name="phone" id="phone" class="input" placeholder="Ingresa tu Telefono">
-                        </div>
-
                         <div class="formulario__buttons">
-                            <button type="submit" class="formulario-btn">
+                            <button type="submit" class="formulario-btn" id="btn-submit" disabled>
                                 Enviar
                                 <i class="bi bi-arrow-right icon formulario-btn1-icon"></i>
                             </button>
 
-                            <button type="reset" class="formulario-btn">
+                            <button type="reset" class="formulario-btn" id="btn-reset">
                                 Restaurar
                                 <i class="bi bi-trash-fill icon formulario-btn1-icon"></i>
                             </button>
+                        </div>
+
+                        <!--Spinner-->
+                        <div class="spinner-container">
+                            <div class="spinner">
+                                <div class="sk-chase">
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                    <div class="sk-chase-dot"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
