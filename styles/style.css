@@ -335,10 +335,11 @@ body{
 
 .landige__page-text{
     grid-column: 1/4;
-    grid-row: 3/5;
+    grid-row: 2/5;
     padding: var(--padding);
     clip-path: polygon(0 0, 0 0, 0 93%, 0% 100%);
     animation: landige-text 1s 1.3s cubic-bezier(.15,.7,.74,.49) forwards;
+    text-align: left;
 }
 
 .landige__page-title{
@@ -943,3 +944,123 @@ hr{
 }
 
 /*Responsive Design*/
+@media screen and (max-width: 800px){
+    .header__navegation{
+        display: none;
+    }
+
+    .landige__page-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .landige__page-container::before{
+        grid-column: 1/-1;
+        grid-row: 1/1;
+    }
+
+    .landige__page-text{
+        grid-column: 1/1;
+        grid-row: 2/-1;
+        text-align: center;
+    }
+
+    .footer__content-container{
+        flex-direction: column;
+    }
+
+    .footer__about,
+    .footer__info,
+    .footer__social{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .title{
+        text-align: center;
+    }
+    .section__banner-content{
+        flex-direction: column;
+    }
+
+    .section__banner-texts{
+        width: 100%;
+    }
+
+    .section__banner-image{
+        width: 100%;
+    }
+
+    .section__exterior-content{
+        flex-direction: column;
+    }
+
+    .section__exterior-text{
+        width: 100%;
+    }
+
+    .section__exterior-image{
+        width: 100%;
+    }
+
+    .section__interior-content{
+        flex-direction: column;
+    }
+
+    .section__interior-text{
+        width: 100%;
+    }
+
+    .section__interior-image{
+        width: 100%;
+    }
+
+    .formulario-p{
+        text-align: left;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+
+    .formulario__container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .formulario__buttons{
+        flex-direction: column;
+    }
+
+    .formulario-btn{
+        width: 100%;
+    }
+
+    .landige__page-title{
+        font-size: 3rem;
+    }
+
+    .landige__page-subtitle{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    @media screen and (max-width: 500px){
+        .sidebar__menu{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 390px){
+    .title{
+        font-size: 1.7rem;
+    }
+
+    .alerta{
+        font-size: 14px;
+    }
+}
