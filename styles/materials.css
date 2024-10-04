@@ -611,3 +611,73 @@ hr{
 }
 
 /*Responsive Design*/
+@media screen and (max-width: 800px){
+    .header__navegation{
+        display: none;
+    }
+
+    .landige__page-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .landige__page-container::before{
+        grid-column: 1/-1;
+        grid-row: 1/1;
+    }
+
+    .landige__page-texts{
+        grid-column: 1/-1;
+        grid-row: 2/-1;
+        text-align: center;
+    }
+
+    .footer__content-container{
+        flex-direction: column;
+    }
+
+    .footer__about,
+    .footer__info,
+    .footer__social{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .landige-title{
+        font-size: 3rem;
+    }
+
+    .landige-subtitle{
+        font-size: 1.7rem;
+    }
+
+    .section__container{
+        flex-direction: column;
+    }
+
+    .section__texts{
+        width: 100%;
+    }
+
+    .section__figure-info{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .sidebar__menu{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .title{
+        font-size: 1.7rem;
+        text-align: left;
+    }
+
+    .alerta{
+        font-size: 14px;
+    }
+}

@@ -305,7 +305,7 @@ body{
 
 .landige__page-texts{
     grid-column: 1/4;
-    grid-row: 3/5;
+    grid-row: 2/5;
     padding: var(--padding);
     clip-path: polygon(0 0%, 0 0, 0 100%, 0 100%);
     animation: landige-texts 1s 1s cubic-bezier(.22,.79,.88,.57) forwards;
@@ -617,3 +617,83 @@ hr{
 }
 
 /*Responsive Design*/
+@media screen and (max-width: 800px){
+    .header__navegation{
+        display: none;
+    }
+
+    .landige__page-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .landige__page-container::before{
+        grid-column: 1/-1;
+        grid-row: 1/1;
+    }
+
+    .landige__page-texts{
+        grid-column: 1/-1;
+        grid-row: 2/-1;
+        text-align: center;
+    }
+
+    .footer__content-container{
+        flex-direction: column;
+    }
+
+    .footer__about,
+    .footer__info,
+    .footer__social{
+        width: 100%;
+    }
+}
+
+@media screen and (max0width: 760px){
+    .formulario__content{
+        width: 100%;
+    }
+
+    .formulario__container{
+        width: 100%;
+    }
+
+    .landige-title{
+        font-size: 3rem;
+    }
+
+    .landige-subtitle{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .formulario__buttons{
+        flex-direction: column;
+    }
+
+    .btn{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .landige-title{
+        font-size: 2.5rem;
+    }
+
+    .landige-subtitle{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .sidebar__menu{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .alerta{
+        font-size: 14px;
+    }
+}
