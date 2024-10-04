@@ -12,6 +12,7 @@
     --bg-btn-reset: #e74c3c;
     --bg-btn-submit: #2ecc71;
     --bg-btn-hover: #34495e;  
+    --bg-alerts: #e74d3ca1;
 
     /*Textos*/
     --title: 'Poppins', sans-serif;
@@ -467,6 +468,17 @@ body{
 .icon-btn{
     font-size: 22px;
     margin-right: 10px;
+}
+
+/*Elementos form js*/
+.alerta{
+    width: 90%;
+    margin: var(--margin);
+    background: var(--bg-alerts);
+    padding: var(--padding);
+    text-align: center;
+    color: var(--color-2);
+    margin-top: 20px;
 }
 
 /*Footer*/
