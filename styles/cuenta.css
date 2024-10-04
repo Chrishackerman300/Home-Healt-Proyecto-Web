@@ -182,3 +182,14 @@ body{
     background: var(--bg-formulario);
     box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
+
+/*Elementos JS*/
+.alerta{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: rgba(220, 20, 60, 0.67);
+    padding: var(--padding);
+    text-align: center;
+    color: var(--color-buttons);
+}

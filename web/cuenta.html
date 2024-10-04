@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/cuenta.css">
+    <link rel="stylesheet" href="/styles/spinner.css">
     <title>Home-Health Web Sign In Proyect</title>
 </head>
 <body>
@@ -33,19 +34,35 @@
 
                     <label class="label">Ingrese su Password</label>
 
-                    <button id="btn-password" class="btn-password">
-                        <i class="bi bi-eye-fill icon"></i>
-                    </button>
+                    <label for="password" class="label-password">
+                        <button id="btn-password" class="btn-password">
+                            <i class="bi bi-eye-fill icon"></i>
+                        </button>
+                    </label>
                 </div>
 
                 <div class="formulario__buttons">
-                    <button type="submit" id="btn-submit" class="btn">
+                    <button type="submit" id="btn-submit" class="btn" disabled>
                         Iniciar Sesión
                     </button>
 
                     <button type="reset" id="btn-reset" class="btn">
                         Resetear
                     </button>
+                </div>
+
+                <!--Spinner-->
+                <div class="spinner-container">
+                    <div class="spinner">
+                        <div class="sk-chase">
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                            <div class="sk-chase-dot"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
